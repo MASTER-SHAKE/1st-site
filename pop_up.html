@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>FULLERDOME</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link href="assets/css/reset.css" rel="stylesheet">
+ <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style_pop_up.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript" src="assets/js/maskedinput.js"></script>
+
+
+  <script type="text/javascript">
+    jQuery(function ($) {
+      $("#phone").mask("(999) 999-9999");
+    });
+
+    $('#name').on('keypress', function () {
+      var that = this;
+
+      setTimeout(function () {
+        var res = /[^а-я ]/g.exec(that.value);
+        console.log(res);
+        that.value = that.value.replace(res, '');
+      }, 0);
+    });
+  </script>
+
+
+</head>
+
+<body>
+  <div id="overlay" class="cover blur-in">
+
+  </div>
+
+  <div class="pop_up">
+    <div class="pop_up_content">
+      <a href="#" class="close_button">&#10006;</a>
+      <h3>ПЕРЕЗВОНИТЬ ВАМ?</h3>
+      <span>ПРОСТО ОСТАВЬТЕ ЗАЯВКУ</span>
+      <form id="" action="" method="">
+        <input id="name" class="search_top" onkeyup="if(/[^a-zA-Zа-яА-ЯёЁ .]/i.test(this.value)){this.value='';}" name="" type="text" placeholder="ВАШЕ ИМЯ">
+        <input id="phone" class="search_top" name="" type="tel" placeholder="ТЕЛЕФОН">
+        <input type="submit" class="callback" value="ОБРАТНЫЙ ЗВОНОК">
+      </form>
+      <span>Оставьте заявку и наш специалист свяжется с вами в течении 15 минут</span>
+      <p><span>Ваши данные не будут переданы третьим лицам</span></p>
+    </div>
+  </div>
+
+
+  <style>
+
+  </style>
+  <script>
+    $(function () {
+      $('.pop_up').hide();
+      $('.pop_up').fadeIn(1000);
+
+      $('.close_button').click(function (e) {
+
+        $('.pop_up').fadeOut(700);
+        $('#overlay').removeClass('blur-in');
+        $('#overlay').addClass('blur-out');
+        e.stopPropagation();
+
+      });
+    });
+  </script>
+</body>
+
+</html>

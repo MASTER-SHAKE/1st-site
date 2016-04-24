@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <title>FULLERDOME</title>
+ <meta name="viewport" content="width=device-width">
+
+ <link href="assets/css/reset.css" rel="stylesheet">
+ <link href="assets/css/style.css" rel="stylesheet">
+ <link href="assets/css/mobile_constructions_pop_up.css" rel="stylesheet">
+
+ <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+ <script type="text/javascript" src="assets/js/maskedinput.js"></script>
+
+
+ <script type="text/javascript">
+  jQuery(function ($) {
+   $("#ck_phon").mask("(999) 999-9999");
+  });
+
+  $('#ck_name').on('keypress', function () {
+   var that = this;
+
+   setTimeout(function () {
+    var res = /[^а-я ]/g.exec(that.value);
+    console.log(res);
+    that.value = that.value.replace(res, '');
+   }, 0);
+  });
+ </script>
+
+</head>
+
+<body>
+
+ <div id="overlay" class="cover blur-in">
+
+ </div>
+
+ <div class="pop_up_mobile">
+  <div class="pop_up_content_mobile">
+   <a href="#" class="close_button_mobile">&#10006;</a>
+   <h3>для заказа конструкции заполните данные в заявке</h3>
+   
+   <form id="" action="" method="">
+   
+    <input id="ck_name" class="pop_up_content_kind" onkeyup="if(/[^a-zA-Zа-яА-ЯёЁ .]/i.test(this.value)){this.value='';}" name="" type="text" placeholder="ВАШЕ ИМЯ">
+    
+    <input id="ck_phon" class="pop_up_content_kind" name="" type="tel" placeholder="ТЕЛЕФОН">
+
+    <textarea id="a" class="pop_up_content_kind" name="" placeholder="Коментарии"></textarea>
+    
+    <input id="" class="pop_up_content_kind" name="" type="email" placeholder="EMAIL">
+
+
+    <input type="submit" class="pop_up_submit" value="ЗАКАЗАТЬ МОБИЛЬНУЮ КОНСТРУКЦИЮ">
+    
+   </form>
+   <span>Оставьте заявку и наш специалист свяжется с вами в течении 15 минут</span>
+   <p><span>Ваши данные не будут переданы третьим лицам</span></p>
+  </div>
+ </div>
+
+
+ <style>
+
+ </style>
+ <script>
+  $(function () {
+   $('.pop_up_mobile').hide();
+   $('.pop_up_mobile').fadeIn(1000);
+
+   $('.close_button_mobile').click(function (e) {
+
+    $('.pop_up_mobile').fadeOut(700);
+    $('#overlay').removeClass('blur-in');
+    $('#overlay').addClass('blur-out');
+    e.stopPropagation();
+
+   });
+  });
+ </script>
+</body>
+
+</html>

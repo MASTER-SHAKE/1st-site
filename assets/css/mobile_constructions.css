@@ -1,0 +1,991 @@
+ 
+  /*===================Common Styles catalog=========================*/
+  
+  .flex {
+   display: -webkit-flex;
+   display: -ms-flex;
+   display: flex;
+  }
+  
+  .catalog * {
+   color: #57585b;
+  }
+  
+  .catalog h2 {
+   font-size: 30px;
+   font-family: GothamProBold;
+   text-transform: uppercase;
+  }
+  
+  .catalog_title h2:after {
+   content: '';
+   position: absolute;
+   width: 130px;
+   height: 7px;
+   background: #27aae0;
+   left: 0;
+   bottom: -30px;
+  }
+  
+  .catalog_title {
+   position: relative;
+  }
+  
+  .catalog_blue {
+   color: #27aae0;
+  }
+  
+  .catalog_gray {
+   color: #57585b;
+   text-align: center;
+  }
+  
+  .catalog_text {
+   margin-top: 60px;
+  }
+  
+  .catalog_text p {
+   margin: 8px 0;
+  }
+  
+  .catalog_top_linck {
+   float: right;
+  }
+  
+  .catalog_top_linck a {
+   height: 25px;
+   width: 25px;
+   margin: 5px;
+   display: inline-block;
+   float: right;
+  }
+  
+  .catalog_top_linck a:first-child {
+   background: rgba(0, 0, 0, 0) url("../img/ns_3.png")no-repeat;
+  }
+  
+  .catalog_top_linck a:nth-child(2) {
+   background: rgba(0, 0, 0, 0) url("../img/ns_2.png")no-repeat;
+  }
+  
+  .catalog_top_linck a:hover {
+   opacity: 0.6;
+  }
+  /*===================Common Styles catalog end=========================*/
+  /*===================MOBILE CONSTRUCTIONS=========================*/
+  /*===================MOBILE CONSTRUCTIONS=========================*/
+  /*==========mobile_constructions============*/
+  
+  .mc .flex-container {
+   margin: 60px 0 170px 0;
+   display: flex;
+   /**/
+   flex-wrap: -webkit-wrap;
+   flex-wrap: -ms-wrap;
+   flex-wrap: wrap;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-justify-content: space-between;
+   justify-content: space-between;
+  }
+  
+  .mc {
+   /* margin-top: 65px;*/
+   color: #57585b;
+   font-size: 12px;
+   font-family: GothamProRegular;
+   line-height: 18px;
+   text-transform: initial;
+  }
+  
+  .mc_construct article {
+   text-align: center;
+   width: 32%;
+   margin: 0 0.5%;
+  }
+  
+  .mc_construct article img {
+   width: 100%;
+  }
+  
+  .mc_construct h1 {
+   color: #27aae0;
+   font-size: 18px;
+   font-family: GothamProBold;
+   line-height: 18px;
+   margin: 14px 0;
+   text-transform: uppercase;
+  }
+  
+  .mc_construct p {
+   min-height: 36px;
+  }
+  
+  .mc_link {
+   cursor: pointer;
+   margin-top: 30px;
+   color: #fff;
+   background-color: #27aae0;
+   padding: 12px 0;
+   font-size: 10px;
+   font-family: GothamProBold;
+   display: inline-block;
+   text-transform: uppercase;
+   text-decoration: none;
+   width: 100%;
+  }
+  /*===============mobile_features===================*/
+  
+  .mc_features article {
+   text-align: center;
+   position: relative;
+   overflow: hidden;
+   width: 32%;
+   margin: 0 0.5%;
+   border: 7px solid #fff;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+  }
+  
+  .mc_features hgroup {
+   width: 100%;
+   padding: 20px 0;
+   left: 0;
+   background: rgba(39, 170, 224, 0.5);
+   position: absolute;
+   top: 38%;
+   text-align: center;
+   z-index: 10;
+  }
+  
+  .mc_features h1 {
+   text-align: center;
+   color: #fff;
+   font-size: 10px;
+   font-family: GothamProBold;
+   line-height: 10px;
+   text-transform: uppercase;
+  }
+  
+  .mc_img_text p {
+   text-align: center;
+   margin: 8px 0;
+  }
+  
+  .mc_img_text li {
+   text-align: left;
+  }
+  /*=============white hover articless begins================*/
+  
+  .mc_img_white {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+   opacity: 0;
+   background-color: #fff;
+   transition: all 0.4s ease-in-out;
+   padding: 14px;
+   border: 7px solid #27aae0;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+  }
+  
+  .mc_features img {
+   display: block;
+   position: relative;
+   margin: 0 auto;
+   width: 100%;
+  }
+  
+  .mc_features .mc_img_text {
+   margin: 30px auto;
+   display: inline-block;
+   background-color: #fff;
+   width: 100%;
+   height: 100%;
+   position: relative;
+   transform: translateY(-100px);
+   transition: all 0.2s ease-in-out;
+  }
+  
+  .mc_features article:hover hgroup {
+   z-index: 0;
+  }
+  
+  .mc_features article:hover .mc_img_white {
+   opacity: 1;
+  }
+  
+  .mc_features article:hover .mc_img_text {
+   opacity: 1;
+   transform: translateY(0px);
+  }
+  /*=============white hover articless end================*/
+  /*==================hove effects=====================*/
+  
+  .mc_link,
+  .ct_link,
+  .ct_application,
+  .cd_application {
+   -webkit-transition: background-color 1s ease 0s;
+   transition: background-color 1s ease 0s;
+  }
+  
+  .mc_link:hover {
+   background-color: #fff;
+   color: #27aae0;
+  }
+  
+  .ct_construct article {
+   -webkit-transition: border-color 1s ease 0s;
+   transition: border-color 1s ease 0s;
+  }
+  /*==============hover effects end==================*/
+  /*===================MOBILE CONSTRUCTIONS END=========================*/
+  /*========================CATALOG===================*/
+  
+  .catalog h2 span {
+   color: #57585b;
+  }
+  
+  .catalog .flex-container {
+   margin: 60px 0 200px 0;
+   display: flex;
+   /**/
+   flex-wrap: -webkit-wrap;
+   flex-wrap: -ms-wrap;
+   flex-wrap: wrap;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-justify-content: space-between;
+   justify-content: space-between;
+  }
+  
+  .ct_construct article {
+   position: relative;
+   text-align: center;
+   width: 49%;
+   padding: 23px;
+   border: 7px solid #fff;
+   margin: 0;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+  }
+  
+  .ct_construct article img {
+   width: 100%;
+  }
+  
+  .ct_construct hgroup {
+   width: 90%;
+   padding: 20px 0 12px;
+   left: 0;
+   background: rgba(39, 170, 224, 0.5);
+   position: absolute;
+   top: 38%;
+   text-align: center;
+   margin: 0 23px;
+  }
+  
+  .ct_construct h1 {
+   text-align: center;
+   color: #fff;
+   font-size: 14px;
+   font-family: GothamProBold;
+   line-height: 10px;
+   text-transform: uppercase;
+  }
+  
+  .ct_construct article:hover {
+   border-color: #f5f5f5;
+  }
+  
+  .ct_link {
+   cursor: pointer;
+   margin-top: 20px;
+   color: #fff;
+   background: rgba(39, 170, 224, 0.5);
+   padding: 6px 23px;
+   font-size: 10px;
+   font-family: GothamProBold;
+   display: inline-block;
+   text-transform: uppercase;
+   text-decoration: none;
+   border: solid 1px #fff;
+  }
+  
+  .ct_link:hover {
+   color: #27aae0;
+   background-color: #fff;
+  }
+  
+  .ct_hgroup {
+   -webkit-transition: padding 1s ease 0s, top 1s ease 0s;
+   transition: padding 1s ease 0s, top 1s ease 0s;
+  }
+  
+  .ct_construct article:hover .ct_hgroup {
+   top: 23px;
+   padding: 103px 0;
+  }
+  /*===================catalog contact form================*/
+  
+  .ct_margin {
+   margin-bottom: 200px;
+  }
+  
+  .ct_contact_content {
+   text-align: center;
+   margin: 50px auto 0;
+  }
+  
+  .ct_contact_content,
+  .ct_contact_content form textarea {
+   width: 372px;
+  }
+  
+  .ct_contact_content span {
+   font: 10px/14px "GothamProRegular";
+   color: #57585b;
+  }
+  
+  .ct_contact_content p {
+   padding: 20px 65px 10px 65px;
+  }
+  
+  .ct_contact_content p span {
+   color: #ccc;
+   background: url("../img/data_pop_up.png") left center no-repeat;
+   padding-left: 20px;
+   display: inline-block;
+  }
+  
+  .ct_contact_content form {
+   margin-top: 25px;
+  }
+  
+  .ct_contact_content form input[type="text"],
+  .ct_contact_content form input[type="tel"],
+  .ct_contact_content form input[type="email"],
+  .ct_contact_content form textarea {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   width: 372px;
+   border-radius: 0;
+   margin-bottom: 14px;
+   font-family: "GothamProRegular";
+   font-size: 12px;
+   padding: 11px 0;
+   border: solid 1px #ccc;
+  }
+  
+  .ct_contact_content form input[type="text"] {
+   background: url("../img/name_pop_up.png") no-repeat;
+   text-indent: 45px;
+  }
+  
+  .ct_contact_content form input[type="tel"] {
+   background: url("../img/tel_pop_up.png") no-repeat;
+   text-indent: 45px;
+  }
+  
+  .ct_contact_content form input[type="email"] {
+   background: url("../img/letter.jpg") no-repeat;
+   text-indent: 45px;
+  }
+  
+  .ct_application {
+   font-family: GothamProBold;
+   width: 282px;
+   cursor: pointer;
+   margin-top: 4px;
+   color: #27aae0;
+   border: 1px solid #27aae0;
+   padding: 15px 0;
+   font-size: 14px;
+   display: inline-block;
+   text-transform: uppercase;
+  }
+  
+  .ct_contact_content form textarea {
+   height: 120px;
+   padding: 11px 30px;
+   background-color: #fff;
+  }
+  
+  .ct_application:hover {
+   background-color: #27aae0;
+   color: #fff;
+  }
+  /*===============catalog contact form end================*/
+  /*========================CATALOG END===================*/
+  /*========================CASTOM-DESING===================*/
+  
+  .cd_margin {
+   margin-bottom: 200px;
+  }
+  
+  .cd_contact_content {
+   position: relative;
+   float: left;
+   text-align: center;
+   margin: 50px auto 0;
+   border: solid 7px #f5f5f5;
+   background: url("../img/ns_4.png") 0 25px no-repeat;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   padding: 25px 190px 0 0;
+  }
+  
+  .cd_contact_content form {
+   float: left;
+  }
+  
+  .cd_contact_content form p,
+  .cd_application {
+   float: right;
+   clear: right;
+  }
+  
+  .cd_contact_content label,
+  .input_row span {
+   margin: 0 10px;
+  }
+  
+  .cd_contact_content label[for="cd_description"] {
+   vertical-align: top;
+  }
+  
+  .cd_lock {
+   background: url("../img/data_pop_up.png") left center no-repeat;
+   bottom: 10px;
+   color: #ccc;
+   display: inline-block;
+   left: 15px;
+   padding-left: 20px;
+   position: absolute;
+   width: 170px;
+  }
+  
+  .cd_contact_content form input[type="text"],
+  .cd_contact_content form input[type="tel"],
+  .cd_contact_content form input[type="email"],
+  #cd_type,
+  .cd_contact_content form textarea {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   width: 372px;
+   border-radius: 0;
+   margin-bottom: 12px;
+   font-family: "GothamProRegular";
+   font-size: 12px;
+   padding: 11px 0;
+   border: solid 1px #7d7d7d;
+  }
+  
+  .cd_contact_content form input[type="text"],
+  .cd_contact_content form input[type="tel"],
+  .cd_contact_content form input[type="email"] {
+   text-indent: 35px;
+  }
+  
+  .cd_contact_content #cd_name {
+   background: url("../img/name_pop_up.png") no-repeat;
+  }
+  
+  .cd_contact_content form input[type="tel"] {
+   background: url("../img/tel_pop_up.png") no-repeat;
+  }
+  
+  .cd_contact_content form input[type="email"] {
+   background: url("../img/letter.jpg") no-repeat;
+   margin-bottom: 40px;
+  }
+  
+  .cd_application_position {
+   position: absolute;
+   right: 190px;
+   bottom: -70px;
+  }
+  
+  .cd_application {
+   background-color: #fff;
+   border: 1px solid #27aae0;
+   color: #27aae0;
+   cursor: pointer;
+   font-family: GothamProBold;
+   font-size: 14px;
+   padding: 15px 0;
+   text-transform: uppercase;
+   width: 372px;
+  }
+  
+  .cd_contact_content form textarea {
+   height: 120px;
+   padding: 11px 30px;
+   background-color: #fff;
+   margin-bottom: 30px;
+  }
+  
+  .cd_application:hover {
+   background-color: #27aae0;
+   color: #fff;
+  }
+  
+  #cd_type {
+   background-color: #fff;
+  }
+  
+  .cd_info {
+   display: block;
+   margin: 0 auto;
+   width: 240px;
+  }
+  /*=========customization radiobatton==========*/
+  
+  .input_row {
+   margin: 16px 0 24px;
+  }
+  
+  .input_row a {
+   color: #27aae0;
+  }
+  
+  .input_row a:hover {
+   color: #000;
+   text-decoration: none;
+  }
+  
+  .input_helper {
+   position: relative;
+   display: inline-block;
+  }
+  
+  .input_helper:before {
+   content: '';
+   display: block;
+   position: absolute;
+  }
+  
+  .input_helper_radio {
+   padding-left: 30px;
+  }
+  
+  .input_helper_radio:before {
+   left: 0;
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+   border: 1px solid #7d7d7d;
+  }
+  
+  .input_row input[type="radio"] {
+   display: none;
+  }
+  
+  .input_row input[type="radio"]:checked + label:before {
+   background: #7d7d7d;
+  }
+  /*=========customization radiobatton end==========*/
+  /*================STANDART PRODUCT PAGE=================*/
+  
+  .pp_margin {
+   margin-top: 50px;
+  }
+  
+  .pp_half {
+   width: 49%;
+   margin: 0 0.5%;
+   float: left;
+  }
+  /*#carousel.flexslider .slides > li {
+ width: 98px !important;
+}*/
+  /*================flexslider================*/
+  
+  .pp_half .flexslider {
+   top: 0 !important;
+  }
+  
+  .pp_half #carousel {
+   margin-top: 12px;
+  }
+  /*================flexslider end================*/
+  /*--------------style for product form--------------*/
+  
+  .pp_options {
+   font-size: 10px;
+   line-height: 12px;
+   font-family: "GothamProRegular";
+  }
+  
+  .pp_options h3 {
+   float: left;
+   width: 100%;
+  }
+  
+  .pp_options h3,
+  .pp_options h3 b {
+   font-family: GothamProBold;
+   font-size: 12px;
+   line-height: 12px;
+   color: #27aae0;
+   text-transform: uppercase;
+  }
+  
+  .pp_options h3 b {
+   line-height: 25px;
+   margin-right: 10px;
+  }
+  /*-----------styles for select arrow---------*/
+  
+  .select_outer {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   width: 284px;
+   border-radius: 0;
+   margin: 12px 0;
+   padding: 9px 0;
+   border: solid 1px #7d7d7d;
+   background-color: #fff;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   background: rgba(0, 0, 0, 0) url("../img/select_arrow.png") right no-repeat;
+  }
+  
+  .select_outer::-ms-expand {
+   /* for IE 11 */
+   display: none;
+  }
+  /*-----------styles for select arrow end---------*/
+  
+  .pp_basic_options {
+   float: left;
+   padding: 10px 20px;
+   border: solid 1px #7d7d7d
+  }
+  
+  .pp_basic_options_margin {
+   float: left;
+   margin: 10px 0;
+   width: 100%;
+  }
+  
+  .pp_options input,
+  .pp_options h3 b {
+   float: left;
+  }
+  
+  .cost_lease,
+  .cost_lease_text {
+   float: left;
+   height: 20px;
+   background-color: #fff;
+   text-align: center;
+   padding: 0;
+  }
+  
+  .cost_lease {
+   width: 20px;
+   color: #27aae0;
+   border: 1px solid #7d7d7d;
+   line-height: 20px;
+   cursor: pointer;
+   margin: 0 !important;
+  }
+  
+  .cost_lease_text {
+   width: 75px;
+   color: #7d7d7d;
+   border-top: 1px solid #7d7d7d;
+   border-bottom: 1px solid #7d7d7d;
+   border-right: 0;
+   border-left: 0;
+  }
+  
+  .cost_cost_lease {
+   width: 100px;
+   height: 20px;
+   color: #7d7d7d;
+   border: 0;
+   background-color: #fff;
+   text-align: center;
+   font-family: "GothamProBold";
+  }
+  
+  .pp_application {
+   background-color: #fff;
+   border: 1px solid #27aae0;
+   color: #27aae0;
+   cursor: pointer;
+   font-family: GothamProBold;
+   font-size: 14px;
+   padding: 15px 0;
+   text-transform: uppercase;
+   width: 366px;
+   margin-top: 10px;
+   -webkit-transition: background-color 1s ease 0s;
+   transition: background-color 1s ease 0s;
+  }
+  
+  .pp_application:hover {
+   background-color: #27aae0;
+   color: #fff;
+  }
+  /*--------------style for product form end--------------*/
+  /*=============NON STANDART PRODUCT PAGE=================*/
+  
+  .non_standart {
+   margin-top: 30px;
+  }
+  
+  .ns_kind {
+   border-radius: 0;
+   margin-bottom: 14px;
+   font-size: 12px;
+   font-family: "GothamProRegular";
+   line-height: 34px;
+   width: 284px;
+   border: 1px solid #ccc;
+   color: #ccc;
+   padding: 0;
+  }
+  
+  .non_standart input[type="text"] {
+   background: url("../img/name_pop_up.png") no-repeat;
+   text-indent: 35px;
+  }
+  
+  .non_standart input[type="tel"] {
+   background: url("../img/tel_pop_up.png") no-repeat;
+   text-indent: 35px;
+  }
+  
+  .non_standart input[type="email"] {
+   background: url("../img/letter.jpg") no-repeat;
+   text-indent: 35px;
+  }
+  
+  .non_standart textarea {
+   height: 120px;
+   background-color: #fff;
+   padding: 0 5px;
+   width: 356px;
+  }
+  
+  .non_standart_submit {
+   background-color: #fff;
+   border: 1px solid #27aae0;
+   color: #27aae0;
+   cursor: pointer;
+   font-family: GothamProBold;
+   font-size: 14px;
+   padding: 15px 0;
+   text-transform: uppercase;
+   width: 366px;
+   margin-top: 10px;
+   -webkit-transition: background-color 1s ease 0s;
+   transition: background-color 1s ease 0s;
+  }
+  
+  .non_standart_submit:hover {
+   background-color: #27aae0;
+   color: #fff;
+  }
+  /*========================RESPONSIVE===================*
+
+
+/*========================RESPONSIVE===================*/
+  
+  @media only screen and (min-width: 1170px) and (max-width: 1640px) {}
+  
+  @media only screen and (min-width: 1001px) {}
+  
+  @media only screen and (max-width: 1170px) {}
+  
+  @media only screen and (min-width: 1001px) and (max-width: 1170px) {}
+  
+  @media only screen and (min-width: 768px) and (max-width: 1000px) {
+   /*===============MOBILE CONSTRUCTIONS======================*/
+   .mc_construct article {
+    margin: 0 1.5%;
+    width: 30%;
+   }
+   .mc_construct p {
+    min-height: 56px;
+   }
+   .mc_features .mc_img_text {
+    margin: 0 auto;
+   }
+   .mc_img_white {
+    padding: 1% 2%;
+   }
+   /*========================CATALOG========================*/
+   /*===================catalog contact form================*/
+   .ct_construct hgroup {
+    width: 87%;
+   }
+   .ct_construct article:hover .ct_hgroup {
+    top: 23px;
+    padding: 68px 0;
+   }
+   /*========================CASTOM-DESING===================*/
+   .cd_contact_content {
+    border: 3px solid #f5f5f5;
+    padding: 25px 8px 0 0;
+   }
+   /*================CATALOG PRODUCT PAGE=================*/
+   .pp_options h3 b {
+    clear: left;
+    display: block;
+    width: 100%;
+    margin: 0;
+   }
+   .pp_application {
+    padding: 15px 5px;
+    width: 310px;
+    font-size: 12px;
+   }
+   /*========================CASTOM-DESING===================*/
+   .cd_application_position {
+    right: 8px;
+   }
+  }
+  
+  @media screen and (max-width: 767px) {
+   .catalog h2 {
+    font-size: 20px;
+   }
+   /*===============MOBILE CONSTRUCTIONS======================*/
+   .mc_construct article,
+   .mc_features article {
+    margin: 10px auto;
+    width: 60%;
+   }
+   .catalog .flex-container {
+    margin: 40px 0 140px;
+   }
+   .top-big-margin {
+    margin-top: 180px;
+   }
+   /*========================CATALOG========================*/
+   .ct_construct article {
+    width: 100%;
+   }
+   .ct_margin {
+    margin-bottom: 100px;
+   }
+   /*======catalog contact form======*/
+   .ct_contact_content,
+   .ct_contact_content form textarea {
+    width: 100%;
+   }
+   .ct_contact_content form input[type="text"],
+   .ct_contact_content form input[type="tel"],
+   .ct_contact_content form input[type="email"],
+   .ct_contact_content form textarea {
+    width: 100%;
+   }
+   /*================CATALOG PRODUCT PAGE=================*/
+   .pp_half {
+    margin: 20px 0;
+    width: 100%;
+   }
+  }
+  
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+   /*========================CATALOG========================*/
+   /*======catalog contact form======*/
+   .ct_construct article:hover .ct_hgroup {
+    padding: 100px 0;
+   }
+   /*========================CASTOM-DESING===================*/
+   .cd_contact_content {
+    padding: 25px 5px;
+   }
+   .cd_contact_content form p,
+   .cd_application {
+    float: left;
+   }
+   .input_row {
+    width: 100%;
+   }
+   .input_row span {
+    display: block;
+    width: 100%;
+   }
+   .cd_contact_content label[for="cd_email"] {
+    margin: 0 33px;
+   }
+   .cd_application_position {
+    right: 36px;
+   }
+  }
+  
+  @media screen and (max-width: 480px) {
+   /*===============MOBILE CONSTRUCTIONS======================*/
+   .mc_construct article,
+   .mc_features article {
+    margin: 10px 0;
+    width: 100%;
+   }
+   /*========================CATALOG========================*/
+   /*======catalog contact form======*/
+   .ct_construct hgroup {
+    top: 26%;
+    width: 84%;
+   }
+   .ct_construct article:hover .ct_hgroup {
+    top: 23px;
+    padding: 50px 0;
+   }
+   /*========================CASTOM-DESING===================*/
+   .cd_contact_content {
+    padding: 25px 5px;
+   }
+   .cd_contact_content form input[type="text"],
+   .cd_contact_content form input[type="tel"],
+   .cd_contact_content form input[type="email"],
+   #cd_type,
+   .cd_contact_content form textarea,
+   .cd_contact_content form p,
+   .cd_application {
+    width: 100%;
+   }
+   .input_row span {
+    margin: 10px;
+   }
+   .cd_application_position {
+    right: 2%;
+    width: 96%;
+   }
+   .cd_application {
+    font-size: 12px;
+   }
+   .cd_lock {
+    left: 50px;
+   }
+   /*================CATALOG PRODUCT PAGE=================*/
+   .pp_options h3 b {
+    clear: left;
+    display: block;
+    width: 100%;
+    margin: 0;
+   }
+   .pp_application {
+    padding: 15px 5px;
+    width: 310px;
+    font-size: 12px;
+   }
+  }

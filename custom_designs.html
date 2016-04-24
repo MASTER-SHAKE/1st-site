@@ -1,0 +1,497 @@
+<!doctype html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <title>FULLERDOME</title>
+ <meta name="viewport" content="width=device-width">
+
+ <link href="assets/css/reset.css" rel="stylesheet">
+ <link href="assets/css/style.css" rel="stylesheet">
+ <link href="assets/css/style_menu.css" rel="stylesheet">
+ <link href="assets/css/mobile_constructions.css" rel="stylesheet">
+
+ <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+ <script type="text/javascript" src="assets/js/maskedinput.js"></script>
+
+ <script type="text/javascript">
+  jQuery(function ($) {
+   $("#cd_phone").mask("(999) 999-9999");
+  });
+
+  $('#cd_name').on('keypress', function () {
+   var that = this;
+
+   setTimeout(function () {
+    var res = /[^а-я ]/g.exec(that.value);
+    console.log(res);
+    that.value = that.value.replace(res, '');
+   }, 0);
+  });
+ </script>
+
+</head>
+
+<body>
+ <div class="m-over">
+  <div class="top-over">
+   <div class="bg-top"></div>
+  </div>
+ </div>
+ <!-- ================================HEADER=============================-->
+ <header class="left">
+  <div class="center">
+   <div class="languages">
+    <span><img src="assets/img/world.png" alt=""></span>
+    <a href="#" title="" class="active">
+          РУС
+        </a>
+    <a href="#" title="">
+          УКР
+        </a>
+    <a href="#" title="">
+          КАЗ
+        </a>
+    <a href="#" title="">
+          DEU
+        </a>
+    <a href="#" title="">
+          ENG
+        </a>
+   </div>
+   <div class="left">
+    <div class="logo">
+     <h1>
+             <a href="#">
+              <img src="assets/img/logo.png" alt="logo">
+              <span>
+               АРЕНДА, ПРОДАЖА<br>КУПОЛЬНЫХ КОНСТРУКЦИЙ<br>ОТ ПРОИЗВОДИТЕЛЯ
+               </span>
+              </a>
+          </h1>
+    </div>
+    <div class="search">
+     <form id="search" action="" method="">
+      <input class="search_top" id="" type="search" placeholder="ВВЕДИТЕ ТЕКСТ ДЛЯ ПОИСКА">
+      <input class="aa" type="submit" value="">
+     </form>
+    </div>
+    <div class="top_contacts">
+     <div><a>+7 (499) 110-19-73</a>
+
+      <span><u>ежедневно</u> с 09:00 до 22:00</span>
+     </div>
+     <!--   <input type="submit" class="callback" value="ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК">-->
+     <a class="callback">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</a>
+    </div>
+   </div>
+  </div>
+  <!--=================menu====================-->
+  <div class="left menu_margin">
+   <div id="elm" class="center">
+    <nav role="navigation">
+     <a href="javascript:void(0);" class="ic menu">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+     </a>
+     <a href="javascript:void(0);" class="ic close"></a>
+     <ul class="main-nav">
+      <!--=====================================-->
+      <li class="top-level-link active">
+       <a class="mega-menu "><span>о компании</span></a>
+       <div class="sub-menu-block border">
+        <div class="row">
+         <div class="col_3">
+
+          <ul class="sub-menu-lists">
+           <li><a>ПРОЕКТИРОВАНИЕ КОНСТРУКЦИЙ</a></li>
+           <li><a>ПРОИЗВОДСТВО КОНСТРУКЦИЙ</a></li>
+           <li><a>ЛИЦЕНЗИИ И СЕРТИФИКАТЫ</a></li>
+          </ul>
+         </div>
+         <div class="col_3">
+
+          <ul class="sub-menu-lists">
+           <li><a>ОТЗЫВЫ НАШИХ КЛИЕНТОВ</a></li>
+           <li><a>ВОПРОС-ОТВЕТ</a></li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </li>
+      <!--=====================================-->
+      <li class="top-level-link">
+       <a class="mega-menu"><span>каталог моделей</span></a>
+       <div class="sub-menu-block border">
+        <div class="row">
+         <div class="col_3">
+
+          <ul class="sub-menu-lists">
+           <li><a>МОБИЛЬНЫЕ КОНСТРУКЦИИ</a></li>
+           <ul class="sub-sub-menu">
+            <li><a href="#">Mobi</a></li>
+            <li><a href="#">Quadro</a></li>
+            <li><a href="#">Voyager</a></li>
+           </ul>
+
+           <li><a>КУОПЛЬНЫЕ ДОМА</a></li>
+           <ul class="sub-sub-menu">
+            <li><a href="#">Летние купола</a></li>
+            <li><a href="#">зимние купола</a></li>
+           </ul>
+           <li><a>КУПОЛЬНЫЕ БАНИ</a></li>
+          </ul>
+         </div>
+         <div class="col_3">
+
+          <ul class="sub-menu-lists">
+           <li><a>КУПОЛЬНЫЕ ТЕПЛИЦЫ</a></li>
+           <li><a>КУПОЛЬНЫЕ БЕСЕДКИ</a></li>
+           <li><a>МЕДИА-КУПОЛА</a></li>
+           <li><a>ИГРОВИЕ КОМПЛЕКСЫ ИЗ БРУСЬЕВ</a></li>
+           <li><a>НЕСТАНДАРТНЫЕ КОНСТРУКЦИИ</a></li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </li>
+
+      <!--=====================================-->
+      <li class="top-level-link">
+       <a class="mega-menu"><span>услуги</span></a>
+
+       <div class="sub-menu-block border">
+        <div class="row">
+         <div class="col_3">
+
+          <ul class="sub-menu-lists">
+           <li><a>АРЕНДА МОБИЛЬНЫХ КОНСТРУКЦИЙ</a></li>
+           <li><a>ПРОДАЖА МОБИЛЬНЫХ КОНСТРУКЦИЙ</a></li>
+           <li><a>МОНТАЖ, ДЕМОНТАЖ КОНСТРУКЦИЙ</a></li>
+          </ul>
+         </div>
+         <div class="col_3">
+
+          <ul class="sub-menu-lists">
+           <li><a>БРЕНДИРОВАНИЕ КУПОЛОВ</a></li>
+           <li><a>ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</a></li>
+          </ul>
+         </div>
+        </div>
+       </div>
+
+      </li>
+
+      <!--=====================================-->
+      <li class="top-level-link">
+       <a><span>наши проекты</span></a>
+      </li>
+      <!--=====================================-->
+      <li class="top-level-link">
+       <a><span>блог</span></a>
+      </li>
+      <!--=====================================-->
+      <li class="top-level-link">
+       <a><span>контакты</span></a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </div>
+  <!--=============menu-end==================-->
+ </header>
+ <!-- ============================HEADER-END=============================-->
+ <!--============================SECTION-1============================== -->
+ <section class="left top-big-margin cd_margin">
+  <div class="center catalog mc">
+   <div class="catalog_title">
+    <h2 class="catalog_blue">нестандартные конструкции</h2>
+   </div>
+
+   <div class="catalog_text">
+    <p>
+     Если среди наших моделей вы не нашли конструкцию с необходимыми параметрами, то мы можем создать конструкцию исходя из ваших требований. Укажите желаемые параметры в форме ниже, нашишите свои пожелания и мы создадим ваш вариант
+    </p>
+   </div>
+   <div class="cd_contact_content">
+
+    <form id="" action="" method="">
+
+     <p>
+      <label for="cd_name">Ваше имя</label>
+      <input id="cd_name" class="" onkeyup="if(/[^a-zA-Zа-яА-ЯёЁ .]/i.test(this.value)){this.value='';}" name="" type="text">
+     </p>
+
+     <p>
+      <label for="cd_phone">Телефон</label>
+      <input id="cd_phone" class="" name="" type="tel">
+     </p>
+
+     <p>
+      <label for="cd_email">Email</label>
+      <input id="cd_email" class="" name="" type="email">
+     </p>
+
+     <p>
+      <label for="cd_type">Укажите тип конструкции</label>
+
+      <select id="cd_type" class="select_outer">
+       <option>Mobi</option>
+       <option>Quadro</option>
+       <option>Voyager</option>
+      </select>
+     </p>
+
+     <p>
+      <label for="cd_diameter">Укажите желаемый диаметр купола</label>
+      <input id="cd_diameter" class="" name="" type="text">
+     </p>
+
+     <!--  <p>
+      <label for="cd_options">Дополнительные опции <a href="#"> подробнее</a></label>
+      <input id="cd_options_1" type="radio" value="" name="">
+      <input id="cd_options_2" type="radio" value="" name="" checked="checked">
+     </p>
+-->
+
+     <p class="input_row">
+      <span>Дополнительные опции <a href="#"> подробнее</a></span>
+      <input id="radio_input_1" type="radio" checked="" name="radio_group" value="myValue 1">
+      <label class="input_helper input_helper_radio" for="radio_input_1">Да</label>
+
+      <input id="radio_input_2" type="radio" name="radio_group" value="myValue 2">
+      <label class="input_helper input_helper_radio" for="radio_input_2">Нет</label>
+     </p>
+
+
+     <p>
+      <label for="cd_region">Укажите регион использования купола</label>
+      <input id="cd_region" class="" name="" type="text">
+     </p>
+
+     <p>
+      <label for="cd_description">Опишите, как вы предполагаете использовать купол</label>
+      <textarea id="cd_description" class="" name=""></textarea>
+     </p>
+
+     <div class="cd_application_position">
+      <input type="submit" class="cd_application" value="заказать мобильную конструкцию">
+      <span class="cd_info">Оставьте заявку и наш специалист свяжется с вами в течении 15 минут</span>
+     </div>
+    </form>
+
+    <p><span class="cd_lock">Ваши данные не будут переданы третьим лицам</span></p>
+   </div>
+
+  </div>
+ </section>
+
+
+
+ <!-- ================================FOOTER=============================-->
+ <footer class="left">
+
+  <div class="foo-m-over">
+   <div class="foo-rel">
+    <div class="foo-over"></div>
+    <div class="bg-foo"></div>
+   </div>
+  </div>
+
+  <div class="center">
+   <div class="left">
+    <div class="subscribe">
+     <span>Подпишитесь и будьте всегда в курсе<br>новостей и акций нашей компании</span>
+     <form id="" action="" method="">
+      <input class="search_top" name="subscribe" type="email" placeholder="ВАШ EMAIL">
+      <input type="submit" value="ПОДПИСАТЬСЯ" class="callback">
+     </form>
+    </div>
+   </div>
+   <!-- ===================================================================-->
+   <div class="footer_row_fourth contact_info">
+    <ul>
+     <li>
+      +7 (499) 110-19-73
+     </li>
+     <li>
+      Обратныый звонок
+     </li>
+     <li>
+      info@fullerdome.ru
+     </li>
+     <li>
+      Москва,ул.Новая Басманная
+      <br> д.23Б,стр.20,офис 303
+     </li>
+    </ul>
+   </div>
+   <!-- ===================================================================-->
+   <div class="footer_row_half">
+    <ul class="column">
+     <li>
+      <a href="#">
+              О компании
+            </a>
+     </li>
+     <li>
+      <a href="#">
+              Проектирование конструкций
+            </a>
+     </li>
+     <li>
+      <a href="#">
+              Производство конструкций
+            </a>
+     </li>
+     <li>
+      <a href="#">
+              Лицензии и сертификаты
+           </a>
+     </li>
+     <li>
+      <a href="#">
+              Наши партнеры и клиенты
+            </a>
+     </li>
+     <li>
+      <a href="#">
+              Вопрос-ответ
+           </a>
+     </li>
+     <li>
+      <a href="#">
+              Услуги
+            </a>
+     </li>
+     <li>
+      <a href="#">
+              Наши проекты
+            </a>
+     </li>
+     <li>
+      <a href="#">
+              Блог
+            </a>
+     </li>
+
+
+
+     <li>
+      <a href="#">
+              Мобильные конструкции
+            </a>
+     </li>
+     <li>
+      <a href="#">
+              Купольные дома
+            </a>
+     </li>
+
+     <li>
+      <a href="#">
+              Купольные бани
+            </a>
+     </li>
+     <li>
+      <a href="#">
+              Купольные теплицы
+            </a>
+     </li>
+     <li>
+      <a href="#">
+              Купольные беседки
+            </a>
+     </li>
+     <li>
+      <a href="#">
+              Медиакупола
+            </a>
+     </li>
+     <li>
+      <a href="#">
+              Игровые комплексы из брусьев
+            </a>
+     </li>
+     <li>
+      <a href="#">
+              Нестандартные конструкции
+            </a>
+     </li>
+    </ul>
+   </div>
+   <!-- ===================================================================-->
+   <div class="footer_row_fourth">
+    <p>Присоеденяйтесь к нам</p>
+    <br>
+    <div class="social">
+
+     <a href="#" alt="vk" title="vk"> </a>
+     <a href="#" alt="facebook" title="facebook"></a>
+     <a href="#" alt="ok" title="ok"></a>
+     <a href="#" alt="instagram" title="instagram"></a>
+    </div>
+   </div>
+  </div>
+  <!-- ===================================================================-->
+  <div class="left footer_info">
+   <div class="center">
+    <div class="footer_row_half">
+     &#169; Мобильные конструкции - проектирование, производство, аренда и продажа универсальных купольных конструкций "под ключ". 2016
+    </div>
+    <div class="footer_row_fourth">
+     <a href="#" alt="" title="">Политика конфиденциальности</a>
+     <br>
+     <a href="#" alt="" title="">Карта сайта</a>
+    </div>
+    <div class="footer_row_fourth">
+     <div class="languages_bottom">
+      <a href="#" title="" class="active">
+                        РУС
+                        </a>
+      <a href="#" title="">
+                        УКР
+                        </a>
+      <a href="#" title="">
+                        КАЗ
+                        </a>
+      <a href="#" title="">
+                        DEU
+                        </a>
+      <a href="#" title="">
+                        ENG
+                        </a>
+     </div>
+    </div>
+   </div>
+  </div>
+ </footer>
+
+ <!--======initialize flexslider=======-->
+ <script>
+  //============scroll top==========
+  $(document).ready(function () {
+
+   $(window).scroll(function () {
+
+    var windowScroll = $(window).scrollTop();
+    if (windowScroll > 290) {
+     $('.top').fadeIn();
+    } else {
+     $('.top').fadeOut();
+    }
+   });
+
+   $('.top').click(function () {
+    $('html,body').animate({
+     scrollTop: $('html').offset().top
+    })
+    return false;
+   });
+
+  })
+ </script>
+</body>
+
+</html>
